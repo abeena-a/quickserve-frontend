@@ -147,6 +147,16 @@ export default function ManageUsers() {
                 })
             ).unwrap();
 
+            alert(
+  `User created successfully!
+
+Email: ${newUser.email}
+
+Default Password: Welcome@123
+
+Please share these credentials with the user.`
+);
+
             setShowAddModal(false);
 
             setNewUser({
