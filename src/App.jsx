@@ -5,6 +5,7 @@ import Hero from "./pages/Hero";
 import Navbar from "./pages/Navbar";
 import Register from "./pages/Register";
 import Login from "./pages/Login"
+import Contact from "./pages/Contact";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 import AdminApp from "./components/admin-module/AdminApp";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/contact" element={<Contact />} />
 
         {/* Admin routes */}
         <Route element={<ProtectedRoute allowedRole="admin" />}>
@@ -70,7 +72,7 @@ function App() {
             <Route path="vendor-services" element={<VendorServices />} />
             <Route path="vendor-requests" element={<VendorRequests />} />
 
-            
+
           </Route>
         </Route>
       </Routes>
